@@ -10,7 +10,7 @@ on:
   
 jobs:
   run-postmantests:
-    runs-on: My EC2 instunce github runner
+    runs-on: self-hosted
 
     steps:
       - name: Checkout the code
