@@ -10,7 +10,7 @@ on:
   
 jobs:
   run-postmantests:
-    runs-on: ec2-github-runner
+    runs-on: My EC2 instunce github runner
 
     steps:
       - name: Checkout the code
