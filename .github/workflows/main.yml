@@ -31,7 +31,8 @@ jobs:
              newman run Newman_Inwarranty-flow_Collection_Final.postman_collection.json \
              -e QA.postman_environment.json \
              -d testData.csv \
-             -r cli,htmlextra
+             -r cli,htmlextra \
+             --reporter-htmlextra-export ./newman/index.html
 
       - name: Newman Report
         if: always() #ensure this gets executed even if above step fails.
