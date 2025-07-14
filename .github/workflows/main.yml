@@ -30,7 +30,7 @@ jobs:
         run: |
              newman run Newman_Inwarranty-flow_Collection_Final.postman_collection \
              -e QA.postman_environment \
-             -d testdata.csv \
+             -d testData.csv \
              -r cli,htmlextra
              
              
